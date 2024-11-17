@@ -1,5 +1,7 @@
-# ESP8266 espresso shot timer
-An espresso shot timer based on gyroscope measurements. To be used with vibration pumps.
+# ESP8266 Espresso Shot Timer
+
+An espresso shot timer based on gyroscope measurements.
+To be used with espresso machines using a vibration pump.
 
 ## Parts needed
 
@@ -11,5 +13,5 @@ An espresso shot timer based on gyroscope measurements. To be used with vibratio
 
 The gyroscope measures the vibrations of the pump to start a timer that is being displayed on the OLED display.
 The vibrations of the three axis are added together and squared to strenghten small vibrations.
-Afterwards during a certain interval multiple measurements are taken to evaluate the strength of vibration.
-If the strength passes the threshold the timer is started.
+Using a rolling interval, multiple measurements are taken into account to evaluate the current strength of vibration.
+If the strength passes the threshold the timer is started / stopped.
